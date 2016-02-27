@@ -1,0 +1,8 @@
+{
+  "presets": ["es2015"],
+  "plugins": [
+    "kneden",
+    "transform-export-extensions",
+    "transform-object-rest-spread"
+  ]
+}
