@@ -4,8 +4,8 @@
   "main": "es5.js",
   "jsnext:main": "index.js",
   "scripts": {
-    "prepublish": "babel --presets es2015 ./index.js > es5.js",
-    "test": "babel-node index-test.js"
+    "prepublish": "rollup -c rollup.config.js",
+    "test": "babel-node --presets es2015 index-test.js"
   },
   "repository": {
     "type": "git",
@@ -37,8 +37,11 @@
     "babel-plugin-transform-export-extensions": "^6.5.0",
     "babel-plugin-transform-object-rest-spread": "^6.5.0",
     "babel-preset-es2015": "^6.5.0",
+    "babel-preset-es2015-rollup": "^1.1.1",
     "kneden": "^1.0.0",
     "proxyquire": "^1.7.4",
+    "rollup": "^0.25.4",
+    "rollup-plugin-babel": "^2.4.0",
     "sinon": "^1.17.3",
     "tape": "^4.4.0"
   }
