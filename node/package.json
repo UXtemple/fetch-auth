@@ -3,6 +3,7 @@
   "description": "Helper to fetch resources that need authentication for node",
   "main": "index.js",
   "scripts": {
+    "prepublish": "cp ../es5.js ."
   },
   "repository": {
     "type": "git",
